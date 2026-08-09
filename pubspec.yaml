@@ -1,0 +1,67 @@
+name: motorcycle_shop
+description: Motorcycle Repair & Spare Parts Shop Manager - Inventory + Billing
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Local Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+
+  # Image picking & storage
+  image_picker: ^1.0.4
+
+  # Number/currency formatting
+  intl: ^0.19.0
+
+  # PDF bill generation (optional but included)
+  pdf: ^3.10.7
+  printing: ^5.11.1
+
+  # Unique IDs
+  uuid: ^4.2.1
+
+  # Manual backup sharing (WhatsApp/Drive app/email) & importing - no API/login needed
+  share_plus: ^10.1.4
+  file_picker: ^8.1.6
+
+  # App settings (shop name, address, invoice customization) - stored on device
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#1F3B57"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#1F3B57"
+  image: "assets/icon/icon_foreground.png"
+  android_12:
+    color: "#1F3B57"
+    image: "assets/icon/icon_foreground.png"
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
