@@ -1,4 +1,4 @@
-# Motorcycle Shop Manager (Flutter)
+# Motorcycle Shop Manager
 
 A complete inventory and billing management app for motorcycle repair and spare parts shops.
 
